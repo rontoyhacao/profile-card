@@ -1,0 +1,117 @@
+.profile-container {
+    position: relative;
+    width: 350px;
+    padding: 80px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+    .profile-image {
+        height: 130px;
+        width: 130px;
+        overflow: hidden;
+        border: 5px solid #2c6975;
+        border-radius: 50%;
+        box-shadow: 0 8px 55px #cde0c9;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .profile {
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 12px;
+        i {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+    .name {
+        font-weight: 800;
+        font-size: 1.4em;
+        color: #2c6975;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+    .profile-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.1em;
+        text-align: center;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+        span {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+    .social-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        i {
+            font-size: 1.2em;
+            padding: 15px;
+            border-radius: 50%;
+            color: white;
+            background: linear-gradient(20deg, #2c6975, #cde0c9);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .fa-github {
+            background: linear-gradient(45deg, #33333388, #333333);
+        }
+        .fa-linkedin {
+            background: linear-gradient(45deg, #0e76a888, #0e76a8);
+        }
+        .fa-instagram {
+            background: linear-gradient(45deg, #e6683ccc 25%, #dc2743 50%, #bc1888 100%);
+        }
+        .fa-twitter {
+            background: linear-gradient(45deg, #005bea, #00c6fb);
+        }
+    }
+    button {
+        cursor: pointer;
+        outline: none;
+        font-weight: 800;
+        font-size: 1em;
+        padding: 12px 20px;
+        width: 80%;
+        margin-top: 25px;
+        border-radius: 50px;
+        background: #d31258;
+        color: white;
+        border: none;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: transform 0.3s, opacity 0.3s;
+        &:hover {
+            transform: scale(1.1);
+            opacity: 0.85;
+        }
+    }
+    .message {
+        background: #6741ff;
+    }
+}

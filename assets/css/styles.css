@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #334e64;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(20deg, #2c6975, #cde0c9);
+}
+
+.profile-container {
+  position: relative;
+  width: 350px;
+  padding: 80px 50px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container .profile-image {
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  border: 5px solid #2c6975;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 55px #cde0c9;
+          box-shadow: 0 8px 55px #cde0c9;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.profile-container .profile-image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.profile-container .profile {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.profile-container .profile i {
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+.profile-container .profile:last-of-type {
+  margin-bottom: 30px;
+}
+
+.profile-container .name {
+  font-weight: 800;
+  font-size: 1.4em;
+  color: #2c6975;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.profile-container .profile-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.profile-container .profile-info span {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.profile-container .social-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-container .social-container i {
+  font-size: 1.2em;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(20deg, #2c6975, #cde0c9);
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.profile-container .social-container i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.profile-container .social-container .fa-github {
+  background: linear-gradient(45deg, #33333388, #333333);
+}
+
+.profile-container .social-container .fa-linkedin {
+  background: linear-gradient(45deg, #0e76a888, #0e76a8);
+}
+
+.profile-container .social-container .fa-instagram {
+  background: linear-gradient(45deg, #e6683ccc 25%, #dc2743 50%, #bc1888 100%);
+}
+
+.profile-container .social-container .fa-twitter {
+  background: linear-gradient(45deg, #005bea, #00c6fb);
+}
+
+.profile-container button {
+  cursor: pointer;
+  outline: none;
+  font-weight: 800;
+  font-size: 1em;
+  padding: 12px 20px;
+  width: 80%;
+  margin-top: 25px;
+  border-radius: 50px;
+  background: #d31258;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.profile-container button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.85;
+}
+
+.profile-container .message {
+  background: #6741ff;
+}
+/*# sourceMappingURL=styles.css.map */
